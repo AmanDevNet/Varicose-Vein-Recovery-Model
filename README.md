@@ -58,10 +58,8 @@ pip (Python package installer)
 Installation
 Clone the repository:
 
-git clone https://github.com/YourGitHubUsername/varicose-vein-project.git
-cd varicose-vein-project
-
-(Replace YourGitHubUsername with your actual GitHub username)
+git clone https://github.com/AmanDevNet/Varicose-Vein-Recovery-Model.git
+cd Varicose-Vein-Recovery-Model
 
 Install the required Python packages:
 
@@ -130,8 +128,10 @@ Output Files
 Upon successful execution, the following files will be generated in the project directory:
 
 output_chart.png: A visual representation of pain, swelling, and activity levels over the estimated recovery time.
+<img width="4176" height="2074" alt="output_chart" src="https://github.com/user-attachments/assets/c4f5a79e-a96a-43a8-8f17-1cbcf3636cd8" />
 
 intake_impact.png: A chart illustrating the impact of supplement intake on risk and recovery.
+<img width="3569" height="1765" alt="intake_impact" src="https://github.com/user-attachments/assets/a29eddc7-995b-47f2-ad4d-927ecdbbb7f5" />
 
 results_summary.txt: A text file summarizing all the predictions and comparisons, including a narrative summary.
 
