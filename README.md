@@ -1,4 +1,5 @@
 Varicose Vein Recovery ML Model
+
 This project implements a machine learning model to simulate and demonstrate the potential health benefits of a multivitamin syrup, specifically formulated with beetroot and fenugreek, in the treatment and recovery of varicose veins. This model uses synthetic data to illustrate the hypothesized efficacy of these natural ingredients.
 
 Project Goal
