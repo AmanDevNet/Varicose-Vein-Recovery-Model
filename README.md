@@ -63,6 +63,7 @@ Installation
 Clone the repository:
 
 git clone https://github.com/AmanDevNet/Varicose-Vein-Recovery-Model.git
+
 cd Varicose-Vein-Recovery-Model
 
 Install the required Python packages:
