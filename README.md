@@ -147,7 +147,4 @@ scaler.pkl: The saved data scaler used for preprocessing.
 
 Contributions are welcome! If you have suggestions for improvements or new features, please feel free to open an issue or submit a pull request.
 
-Author Aman Sharma 
-Contact : 
-
-Aman Sharma
+Author Aman Sharma LinkedIn :- www.linkedin.com/in/aman-sharma-842b66318
