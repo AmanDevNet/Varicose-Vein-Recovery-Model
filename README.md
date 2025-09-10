@@ -78,18 +78,13 @@ python varicose_vein_model.py
 
 **Output**
 
-Recovery chart saved as 'output_chart.png'
-Intake impact chart saved as 'intake_impact.png'
+Recovery chart saved as 'output_chart.png', 
+Intake impact chart saved as 'intake_impact.png', 
 Results summary saved as 'results_summary.txt'
 
-Analysis complete! Files saved:
-    - output_chart.png
-    - intake_impact.png
-    - results_summary.txt
-    - Model files: risk_classifier.pkl, recovery_regressor.pkl, scaler.pkl
 
 Output Files
-Upon successful execution, the following files will be generated in the project directory:
+After successful execution, the following files will be generated in the project directory:
 
 output_chart.png: A visual representation of pain, swelling, and activity levels over the estimated recovery time.
 <img width="4176" height="2074" alt="output_chart" src="https://github.com/user-attachments/assets/c4f5a79e-a96a-43a8-8f17-1cbcf3636cd8" />
