@@ -78,9 +78,9 @@ python varicose_vein_model.py
 
 Follow the prompts: The script will ask you to enter various patient details in the terminal.
 
-🧪 Initializing Varicose Vein Recovery ML Model...
-📊 Generating synthetic training data...
-🤖 Training ML models...
+Initializing Varicose Vein Recovery ML Model...
+ Generating synthetic training data...
+ Training ML models...
 === MODEL PERFORMANCE ===
 Risk Classification Accuracy: 0.952
 Recovery Prediction R²: 0.338
@@ -99,12 +99,12 @@ Beetroot grams per day: 9
 Fenugreek intake days in last 30 days: 27
 Fenugreek grams per day: 9
 
-🔮 Making predictions...
+Making predictions...
 
 View the results: After entering all inputs, the script will print the predictions to the terminal and save the output files.
 
 ==================================================
-📋 RESULTS
+RESULTS
 ==================================================
 Risk Level: Low
 Estimated Recovery Time: 9.8 weeks
@@ -112,17 +112,17 @@ Estimated Recovery Time: 9.8 weeks
 Top Recommendations:
 1. Elevate legs regularly and consider compression stockings
 
-📊 Supplement Comparison:
+Supplement Comparison:
 Current regimen: Low risk, 9.8 weeks
 No supplements: Moderate risk, 9.4 weeks
 Optimal supplements: Low risk, 8.4 weeks
 
-📈 Generating charts and saving results...
-✅ Recovery chart saved as 'output_chart.png'
-✅ Intake impact chart saved as 'intake_impact.png'
-✅ Results summary saved as 'results_summary.txt'
+Generating charts and saving results...
+Recovery chart saved as 'output_chart.png'
+Intake impact chart saved as 'intake_impact.png'
+Results summary saved as 'results_summary.txt'
 
-✅ Analysis complete! Files saved:
+Analysis complete! Files saved:
     - output_chart.png
     - intake_impact.png
     - results_summary.txt
@@ -145,19 +145,9 @@ recovery_regressor.pkl: The saved trained Gradient Boosting Regressor model.
 
 scaler.pkl: The saved data scaler used for preprocessing.
 
-Project Structure
-.
-├── varicose_vein_model.py  # The main script for the ML model
-├── output_chart.png        # Generated recovery chart
-├── intake_impact.png       # Generated intake impact chart
-├── results_summary.txt     # Generated summary of results
-├── risk_classifier.pkl     # Saved trained risk classification model
-├── recovery_regressor.pkl  # Saved trained recovery prediction model
-└── scaler.pkl              # Saved data scaler
-
-Contributing
 Contributions are welcome! If you have suggestions for improvements or new features, please feel free to open an issue or submit a pull request.
 
-Author
+Author Aman Sharma 
+Contact : 
 
 Aman Sharma
