@@ -52,7 +52,7 @@ Supplement Comparison: A key feature where the model compares the predicted outc
 Visualization & Summary:  Charts are generated to visually represent the recovery progression, and a summary text file captures all the results.
 
 Getting Started
-Follow these steps to set up and run the project.
+Steps to set up and run the project.
 
 Prerequisites
 Python 3.x
@@ -76,48 +76,8 @@ Execute the main script:
 
 python varicose_vein_model.py
 
-Follow the prompts: The script will ask you to enter various patient details in the terminal.
+**Output**
 
-Initializing Varicose Vein Recovery ML Model...
- Generating synthetic training data...
- Training ML models...
-=== MODEL PERFORMANCE ===
-Risk Classification Accuracy: 0.952
-Recovery Prediction R²: 0.338
-Recovery Prediction MSE: 0.993
-
-=== VARICOSE VEIN RECOVERY PREDICTOR ===
-Please enter the following information:
-Age (years): 44
-BMI: 24.5
-Family history of varicose veins (0=No, 1=Yes): 0
-Pain level (0-10): 7
-Swelling level (0-10): 5
-Activity level (0-10): 8
-Beetroot intake days in last 30 days: 27
-Beetroot grams per day: 9
-Fenugreek intake days in last 30 days: 27
-Fenugreek grams per day: 9
-
-Making predictions...
-
-View the results: After entering all inputs, the script will print the predictions to the terminal and save the output files.
-
-==================================================
-RESULTS
-==================================================
-Risk Level: Low
-Estimated Recovery Time: 9.8 weeks
-
-Top Recommendations:
-1. Elevate legs regularly and consider compression stockings
-
-Supplement Comparison:
-Current regimen: Low risk, 9.8 weeks
-No supplements: Moderate risk, 9.4 weeks
-Optimal supplements: Low risk, 8.4 weeks
-
-Generating charts and saving results...
 Recovery chart saved as 'output_chart.png'
 Intake impact chart saved as 'intake_impact.png'
 Results summary saved as 'results_summary.txt'
