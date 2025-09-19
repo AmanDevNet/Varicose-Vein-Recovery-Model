@@ -15,6 +15,7 @@ Terminal-based input: You just run the script and enter the patient's info right
 Models Used
 
 Random Forest Classifier → predicts recovery risk (Low / Moderate / High)
+
 Gradient Boosting Regressor → estimates recovery time in weeks
 
 Both models are trained on a synthetic dataset (~8000 samples) that mimics realistic recovery patterns. No medical data is required.
