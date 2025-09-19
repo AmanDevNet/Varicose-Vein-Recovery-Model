@@ -1,65 +1,57 @@
 Varicose Vein Recovery Model
 
-This project uses machine learning to demonstrate how a multivitamin syrup made from beetroot and fenugreek might help in the recovery of varicose veins. The idea is to simulate and show how these natural ingredients could improve symptoms and reduce recovery time — even without needing real clinical data.
+This project shows how a simple machine learning model can simulate the effect of natural supplements (beetroot + fenugreek) on varicose vein recovery. It’s not based on real clinical data — the goal is just to demonstrate how ML can be used in health-related simulations.
 
-Project Goal
-The main purpose of this model is to simulate the effectiveness of a combined syrup (beetroot + fenugreek) for treating varicose veins. It helps visualize improvements in symptoms like pain, swelling, and activity level, as well as estimate how long recovery may take — with and without supplements.
+What it does
+
+Predicts risk level (Low / Moderate / High) using a Random Forest model
+Estimates recovery time in weeks with Gradient Boosting
+Compares scenarios: no supplements vs current intake vs optimal intake
+Generates simple charts to show progress (pain ↓, swelling ↓, activity ↑)
 
 Features
 Terminal-based input: You just run the script and enter the patient's info right into the terminal — no need for a frontend.
 
-Two machine learning models:
+Models Used
 
-RandomForestClassifier to predict risk level: Low / Moderate / High
+Random Forest Classifier → predicts recovery risk (Low / Moderate / High)
+Gradient Boosting Regressor → estimates recovery time in weeks
 
-GradientBoostingRegressor to predict recovery time (in weeks)
-
-Synthetic dataset generation: The model is trained on realistic simulated data (around 8000 entries), so you don’t need any actual medical dataset.
-
+Both models are trained on a synthetic dataset (~8000 samples) that mimics realistic recovery patterns. No medical data is required.
 Charts & Visuals:
 
-output_chart.png: Shows improvement in symptoms over time (pain ↓, swelling ↓, activity ↑)
+Visuals & Outputs
 
-intake_impact.png: Compares supplement intake vs recovery speed
-
-Summary Output:
-
-Recovery risk and time
-
-Personalized suggestions
-
-Comparison of "Current intake" vs "No supplements" vs "Optimal supplements"
-
-Reusable model: Trained models (.pkl files) are saved so you can reuse them later without retraining.
+output_chart.png → shows how pain, swelling, and activity levels change over time
+intake_impact.png → compares recovery speed with vs. without supplements
+results_summary.txt → simple text summary with risk, recovery time, and suggestions
+Models (.pkl files) are also saved so you don’t need to retrain every time.
 
 How It Works
-The project simulates the progression and recovery of varicose veins based on various input factors.
 
-Data Generation: A synthetic dataset is created, mimicking realistic patient profiles and recovery patterns, where beetroot and fenugreek intake are designed to positively influence outcomes.
+A synthetic dataset is generated with patient-like profiles (age, BMI, symptoms, supplement intake, etc.).
 
-Model Training:
+Models are trained:
 
-The RandomForestClassifier learns to categorize risk levels (Low, Moderate, High) based on the input features.
+Random Forest → risk level
 
-The GradientBoostingRegressor learns to predict the recovery time in weeks.
+Gradient Boosting → recovery time
 
-User Input: You provide specific patient parameters (age, BMI, symptoms, supplement intake) via the terminal.
+You enter patient details in the terminal.
 
-Prediction: The trained models use your input to predict the risk level and estimated recovery time for the simulated patient.
+The program predicts recovery and compares three cases:
 
-Supplement Comparison: A key feature where the model compares the predicted outcome for your input against a scenario with "No supplements" and an "Optimal supplements" scenario, directly demonstrating the benefits.
+No supplements
 
-Visualization & Summary:  Charts are generated to visually represent the recovery progression, and a summary text file captures all the results.
+Current intake
+
+Optimal intake
+
+Results are shown in charts and a summary file.
 
 Getting Started
 Steps to set up and run the project.
 
-Prerequisites
-Python 3.x
-
-pip (Python package installer)
-
-Installation
 Clone the repository:
 
 git clone https://github.com/AmanDevNet/Varicose-Vein-Recovery-Model.git
@@ -85,22 +77,22 @@ Results summary saved as 'results_summary.txt'
 
 
 Output Files
-After successful execution, the following files will be generated in the project directory:
 
-output_chart.png: A visual representation of pain, swelling, and activity levels over the estimated recovery time.
+output_chart.png → recovery progression (pain ↓, swelling ↓, activity ↑)
 <img width="4176" height="2074" alt="output_chart" src="https://github.com/user-attachments/assets/c4f5a79e-a96a-43a8-8f17-1cbcf3636cd8" />
 
-intake_impact.png: A chart illustrating the impact of supplement intake on risk and recovery.
+intake_impact.png → effect of supplements on recovery speed
 <img width="3569" height="1765" alt="intake_impact" src="https://github.com/user-attachments/assets/a29eddc7-995b-47f2-ad4d-927ecdbbb7f5" />
 
-results_summary.txt: A text file summarizing all the predictions and comparisons, including a narrative summary.
+results_summary.txt → text summary with predictions
 
-risk_classifier.pkl: The saved trained Random Forest Classifier model.
+risk_classifier.pkl, recovery_regressor.pkl, scaler.pkl → saved models and preprocessor
 
 recovery_regressor.pkl: The saved trained Gradient Boosting Regressor model.
 
 scaler.pkl: The saved data scaler used for preprocessing.
 
-Contributions are welcome! If you have suggestions for improvements or new features, please feel free to open an issue or submit a pull request.
+Contributions are welcome — feel free to suggest improvements or add features!
 
-Author Aman Sharma LinkedIn :- www.linkedin.com/in/aman-sharma-842b66318
+Author Aman Sharma 
+LinkedIn :- www.linkedin.com/in/aman-sharma-842b66318
