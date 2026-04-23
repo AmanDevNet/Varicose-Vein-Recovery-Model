@@ -13,7 +13,6 @@ ML-powered recovery risk assessment with explainable AI
   <img src="https://img.shields.io/badge/React-18.2.0-blue.svg" alt="React">
   <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License MIT">
   <a href="https://github.com/AmanDevNet/Varicose-Vein-Recovery-Model/actions"><img src="https://github.com/AmanDevNet/Varicose-Vein-Recovery-Model/actions/workflows/test.yml/badge.svg" alt="Tests"></a>
-  <a href="https://huggingface.co/spaces/AmanDevNet/varicose-vein-predictor"><img src="https://img.shields.io/badge/Live-Demo-teal.svg" alt="Live Demo"></a>
 </p>
 
 <div align="center">
@@ -25,14 +24,6 @@ ML-powered recovery risk assessment with explainable AI
 
 This end-to-end application leverages an ensemble of Random Forest, Gradient Boosting, and XGBoost models to provide high-precision recovery risk assessments for varicose vein patients. By integrating SHAP (SHallay Additive exPlanations) and multi-scenario supplement analysis, the system transforms complex biometric data into actionable medical insights. It is designed for clinical decision support, offering a seamless bridge between machine learning performance and patient-centric care.
 
-<p align="center">
-  <a href="https://huggingface.co/spaces/AmanDevNet/varicose-vein-predictor">
-    <img src="https://img.shields.io/badge/%F0%9F%9A%80%20Try%20Live%20Demo-teal?style=for-the-badge" alt="Try Live Demo">
-  </a>
-  <a href="https://varicose-vein-api.onrender.com/docs">
-    <img src="https://img.shields.io/badge/%F0%9F%93%96%20API%20Docs-blue?style=for-the-badge" alt="API Docs">
-  </a>
-</p>
 
 ## Table of Contents
 - [Features](#features)
@@ -45,7 +36,6 @@ This end-to-end application leverages an ensemble of Random Forest, Gradient Boo
 - [Model Performance](#model-performance)
 - [SHAP Explainability](#shap-explainability)
 - [Medical Disclaimer](#medical-disclaimer)
-- [Deployment](#deployment)
 - [Contributing](#contributing)
 - [Author](#author)
 - [License](#license)
@@ -303,16 +293,6 @@ Top factors for this prediction:
 > ⚠️ **MEDICAL DISCLAIMER**
 > This tool is for educational and research purposes only. It is not intended to diagnose, treat, cure, or prevent any medical condition. Always consult a qualified healthcare professional for medical advice. The model predictions are decision-support estimates and should not be used as the sole basis for clinical intervention.
 
-## Deployment
-
-- **Frontend**: Hosted on [Hugging Face Spaces](https://huggingface.co/spaces/AmanDevNet/varicose-vein-predictor) (Static React).
-- **Backend**: Hosted on [Render](https://varicose-vein-api.onrender.com) (Python Web Service).
-
-**Custom Deployment:**
-1. Fork the repository.
-2. Deploy backend to Render/Railway using the provided `Dockerfile`.
-3. Update `VITE_API_URL` in the frontend environment variables.
-4. Build and host the `dist` folder on HF Spaces or Vercel.
 
 ## Contributing
 
