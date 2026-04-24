@@ -22,7 +22,7 @@ ML-powered recovery risk assessment with explainable AI
 
 </div>
 
-This end-to-end application leverages an ensemble of Random Forest, Gradient Boosting, and XGBoost models to provide high-precision recovery risk assessments for varicose vein patients. By integrating SHAP (SHallay Additive exPlanations) and multi-scenario supplement analysis, the system transforms complex biometric data into actionable medical insights. It is designed for clinical decision support, offering a seamless bridge between machine learning performance and patient-centric care.
+This end-to-end application leverages an ensemble of Random Forest, Gradient Boosting, and XGBoost models to provide high-precision recovery risk assessments for varicose vein patients. By integrating SHAP (SHapley Additive exPlanations) and multi-scenario supplement analysis, the system transforms complex biometric data into actionable medical insights. It is designed for clinical decision support, offering a seamless bridge between machine learning performance and patient-centric care.
 
 
 ## Table of Contents
@@ -45,7 +45,7 @@ This end-to-end application leverages an ensemble of Random Forest, Gradient Boo
 | Feature | Description |
 |---------|-------------|
 | **Ensemble Prediction** | Voting classifier combining RF, GB, and XGBoost for robust risk categorization. |
-| **SHAP Explainability** | Per-prediction feature impact visualization using SHallay Additive exPlanations. |
+| **SHAP Explainability** | Per-prediction feature impact visualization using SHapley Additive exPlanations. |
 | **Scenario Comparison** | Real-time recovery projection across three distinct supplement intake regimens. |
 | **PDF Report** | Automated generation of timestamped medical recovery reports via ReportLab. |
 | **Batch Prediction** | Bulk processing of patient data through CSV uploads for clinical research. |
@@ -89,30 +89,30 @@ User Input → React Frontend → FastAPI Backend → ML Pipeline (RF + GB + XGB
 
 ### Landing Page
 <p align="center">
-  <img src="screenshots/Screenshot 2026-04-23 172045.png" alt="Landing Page Hero Section" width="800"/>
+  <img src="screenshots/landing_page.png" alt="Landing Page Hero Section" width="800"/>
 </p>
 <p align="center"><i>Professional medical dashboard landing page featuring a high-contrast dark theme and immediate access to tools.</i></p>
 
 ### Input Form
 <p align="center">
-  <img src="screenshots/Screenshot 2026-04-23 172116.png" alt="Multi-step Assessment Tool" width="800"/>
+  <img src="screenshots/input_form.png" alt="Multi-step Assessment Tool" width="800"/>
 </p>
 <p align="center"><i>Interactive multi-step form with real-time profile summary for basic information, symptoms, and supplement intake.</i></p>
 
 ### Results Dashboard
 <p align="center">
-  <img src="screenshots/Screenshot 2026-04-23 173319.png" alt="Prediction Results and Scenarios" width="800"/>
+  <img src="screenshots/results_dashboard.png" alt="Prediction Results and Scenarios" width="800"/>
 </p>
 <p align="center"><i>Primary dashboard showing risk level, confidence scores, and a comparison between different supplement regimens.</i></p>
 
 <p align="center">
-  <img src="screenshots/Screenshot 2026-04-23 173337.png" alt="Projected Recovery Timeline" width="800"/>
+  <img src="screenshots/recovery_timeline.png" alt="Projected Recovery Timeline" width="800"/>
 </p>
 <p align="center"><i>Interactive chart visualizing the projected reduction in symptom severity over time across treatment scenarios.</i></p>
 
 ### Explainability
 <p align="center">
-  <img src="screenshots/Screenshot 2026-04-23 173348.png" alt="SHAP Feature Importance" width="800"/>
+  <img src="screenshots/shap_explainability.png" alt="SHAP Feature Importance" width="800"/>
 </p>
 <p align="center"><i>SHAP visualization explaining the specific factors (Age, BMI, Activity) that influenced the individual risk prediction.</i></p>
 
@@ -273,7 +273,7 @@ The ensemble model demonstrates exceptional stability across varied patient demo
 
 ## SHAP Explainability
 
-SHAP (SHallay Additive exPlanations) is a game-theoretic approach to explain the output of any machine learning model. It assigns each feature an importance value for a specific prediction, providing transparency in "black-box" models.
+SHAP (SHapley Additive exPlanations) is a game-theoretic approach to explain the output of any machine learning model. It assigns each feature an importance value for a specific prediction, providing transparency in "black-box" models.
 
 ```text
 Top factors for this prediction:
@@ -285,7 +285,7 @@ Top factors for this prediction:
 ```
 
 <p align="center">
-  <img src="screenshots/Screenshot 2026-04-23 173348.png" alt="SHAP Plot" width="800"/>
+  <img src="screenshots/shap_explainability.png" alt="SHAP Plot" width="800"/>
 </p>
 
 ## Medical Disclaimer
